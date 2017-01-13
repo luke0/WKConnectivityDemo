@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A359FCBA1E28C9FE00363B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359FCB91E28C9FE00363B1F /* AppDelegate.swift */; };
+		A359FCBC1E28C9FE00363B1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359FCBB1E28C9FE00363B1F /* ViewController.swift */; };
+		A359FCBF1E28C9FE00363B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A359FCBD1E28C9FE00363B1F /* Main.storyboard */; };
+		A359FCC11E28C9FE00363B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A359FCC01E28C9FE00363B1F /* Assets.xcassets */; };
+		A359FCC41E28C9FE00363B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A359FCC21E28C9FE00363B1F /* LaunchScreen.storyboard */; };
+		A359FCC91E28C9FE00363B1F /* WK_DataTransfer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A359FCC81E28C9FE00363B1F /* WK_DataTransfer WatchKit App.app */; };
+		A359FCCF1E28C9FE00363B1F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A359FCCD1E28C9FE00363B1F /* Interface.storyboard */; };
+		A359FCD11E28C9FE00363B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A359FCD01E28C9FE00363B1F /* Assets.xcassets */; };
+		A359FCD81E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A359FCD71E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A359FCDF1E28C9FE00363B1F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359FCDE1E28C9FE00363B1F /* InterfaceController.swift */; };
+		A359FCE11E28C9FE00363B1F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359FCE01E28C9FE00363B1F /* ExtensionDelegate.swift */; };
+		A359FCE31E28C9FE00363B1F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359FCE21E28C9FE00363B1F /* NotificationController.swift */; };
+		A359FCE51E28C9FE00363B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A359FCE41E28C9FE00363B1F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A359FCCA1E28C9FE00363B1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A359FCAE1E28C9FD00363B1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A359FCC71E28C9FE00363B1F;
+			remoteInfo = "WK_DataTransfer WatchKit App";
+		};
+		A359FCD91E28C9FE00363B1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A359FCAE1E28C9FD00363B1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A359FCD61E28C9FE00363B1F;
+			remoteInfo = "WK_DataTransfer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A359FCEC1E28C9FE00363B1F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A359FCD81E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A359FCF01E28C9FE00363B1F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A359FCC91E28C9FE00363B1F /* WK_DataTransfer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A359FCB61E28C9FE00363B1F /* WK_DataTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WK_DataTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A359FCB91E28C9FE00363B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A359FCBB1E28C9FE00363B1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A359FCBE1E28C9FE00363B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A359FCC01E28C9FE00363B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A359FCC31E28C9FE00363B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A359FCC51E28C9FE00363B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A359FCC81E28C9FE00363B1F /* WK_DataTransfer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WK_DataTransfer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A359FCCE1E28C9FE00363B1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A359FCD01E28C9FE00363B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A359FCD21E28C9FE00363B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A359FCD71E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WK_DataTransfer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A359FCDD1E28C9FE00363B1F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A359FCDE1E28C9FE00363B1F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A359FCE01E28C9FE00363B1F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A359FCE21E28C9FE00363B1F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A359FCE41E28C9FE00363B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A359FCE61E28C9FE00363B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A359FCB31E28C9FD00363B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A359FCD41E28C9FE00363B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A359FCAD1E28C9FD00363B1F = {
+			isa = PBXGroup;
+			children = (
+				A359FCB81E28C9FE00363B1F /* WK_DataTransfer */,
+				A359FCCC1E28C9FE00363B1F /* WK_DataTransfer WatchKit App */,
+				A359FCDB1E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension */,
+				A359FCB71E28C9FE00363B1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A359FCB71E28C9FE00363B1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A359FCB61E28C9FE00363B1F /* WK_DataTransfer.app */,
+				A359FCC81E28C9FE00363B1F /* WK_DataTransfer WatchKit App.app */,
+				A359FCD71E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A359FCB81E28C9FE00363B1F /* WK_DataTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				A359FCB91E28C9FE00363B1F /* AppDelegate.swift */,
+				A359FCBB1E28C9FE00363B1F /* ViewController.swift */,
+				A359FCBD1E28C9FE00363B1F /* Main.storyboard */,
+				A359FCC01E28C9FE00363B1F /* Assets.xcassets */,
+				A359FCC21E28C9FE00363B1F /* LaunchScreen.storyboard */,
+				A359FCC51E28C9FE00363B1F /* Info.plist */,
+			);
+			path = WK_DataTransfer;
+			sourceTree = "<group>";
+		};
+		A359FCCC1E28C9FE00363B1F /* WK_DataTransfer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A359FCCD1E28C9FE00363B1F /* Interface.storyboard */,
+				A359FCD01E28C9FE00363B1F /* Assets.xcassets */,
+				A359FCD21E28C9FE00363B1F /* Info.plist */,
+			);
+			path = "WK_DataTransfer WatchKit App";
+			sourceTree = "<group>";
+		};
+		A359FCDB1E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A359FCDE1E28C9FE00363B1F /* InterfaceController.swift */,
+				A359FCE01E28C9FE00363B1F /* ExtensionDelegate.swift */,
+				A359FCE21E28C9FE00363B1F /* NotificationController.swift */,
+				A359FCE41E28C9FE00363B1F /* Assets.xcassets */,
+				A359FCE61E28C9FE00363B1F /* Info.plist */,
+				A359FCDC1E28C9FE00363B1F /* Supporting Files */,
+			);
+			path = "WK_DataTransfer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A359FCDC1E28C9FE00363B1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A359FCDD1E28C9FE00363B1F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A359FCB51E28C9FD00363B1F /* WK_DataTransfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A359FCF11E28C9FE00363B1F /* Build configuration list for PBXNativeTarget "WK_DataTransfer" */;
+			buildPhases = (
+				A359FCB21E28C9FD00363B1F /* Sources */,
+				A359FCB31E28C9FD00363B1F /* Frameworks */,
+				A359FCB41E28C9FD00363B1F /* Resources */,
+				A359FCF01E28C9FE00363B1F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A359FCCB1E28C9FE00363B1F /* PBXTargetDependency */,
+			);
+			name = WK_DataTransfer;
+			productName = WK_DataTransfer;
+			productReference = A359FCB61E28C9FE00363B1F /* WK_DataTransfer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A359FCC71E28C9FE00363B1F /* WK_DataTransfer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A359FCED1E28C9FE00363B1F /* Build configuration list for PBXNativeTarget "WK_DataTransfer WatchKit App" */;
+			buildPhases = (
+				A359FCC61E28C9FE00363B1F /* Resources */,
+				A359FCEC1E28C9FE00363B1F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A359FCDA1E28C9FE00363B1F /* PBXTargetDependency */,
+			);
+			name = "WK_DataTransfer WatchKit App";
+			productName = "WK_DataTransfer WatchKit App";
+			productReference = A359FCC81E28C9FE00363B1F /* WK_DataTransfer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A359FCD61E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A359FCE91E28C9FE00363B1F /* Build configuration list for PBXNativeTarget "WK_DataTransfer WatchKit Extension" */;
+			buildPhases = (
+				A359FCD31E28C9FE00363B1F /* Sources */,
+				A359FCD41E28C9FE00363B1F /* Frameworks */,
+				A359FCD51E28C9FE00363B1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WK_DataTransfer WatchKit Extension";
+			productName = "WK_DataTransfer WatchKit Extension";
+			productReference = A359FCD71E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A359FCAE1E28C9FD00363B1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Luke Inger";
+				TargetAttributes = {
+					A359FCB51E28C9FD00363B1F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A359FCC71E28C9FE00363B1F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A359FCD61E28C9FE00363B1F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A359FCB11E28C9FD00363B1F /* Build configuration list for PBXProject "WK_DataTransfer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A359FCAD1E28C9FD00363B1F;
+			productRefGroup = A359FCB71E28C9FE00363B1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A359FCB51E28C9FD00363B1F /* WK_DataTransfer */,
+				A359FCC71E28C9FE00363B1F /* WK_DataTransfer WatchKit App */,
+				A359FCD61E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A359FCB41E28C9FD00363B1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A359FCC41E28C9FE00363B1F /* LaunchScreen.storyboard in Resources */,
+				A359FCC11E28C9FE00363B1F /* Assets.xcassets in Resources */,
+				A359FCBF1E28C9FE00363B1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A359FCC61E28C9FE00363B1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A359FCD11E28C9FE00363B1F /* Assets.xcassets in Resources */,
+				A359FCCF1E28C9FE00363B1F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A359FCD51E28C9FE00363B1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A359FCE51E28C9FE00363B1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A359FCB21E28C9FD00363B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A359FCBC1E28C9FE00363B1F /* ViewController.swift in Sources */,
+				A359FCBA1E28C9FE00363B1F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A359FCD31E28C9FE00363B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A359FCE31E28C9FE00363B1F /* NotificationController.swift in Sources */,
+				A359FCE11E28C9FE00363B1F /* ExtensionDelegate.swift in Sources */,
+				A359FCDF1E28C9FE00363B1F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A359FCCB1E28C9FE00363B1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A359FCC71E28C9FE00363B1F /* WK_DataTransfer WatchKit App */;
+			targetProxy = A359FCCA1E28C9FE00363B1F /* PBXContainerItemProxy */;
+		};
+		A359FCDA1E28C9FE00363B1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A359FCD61E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension */;
+			targetProxy = A359FCD91E28C9FE00363B1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A359FCBD1E28C9FE00363B1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A359FCBE1E28C9FE00363B1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A359FCC21E28C9FE00363B1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A359FCC31E28C9FE00363B1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A359FCCD1E28C9FE00363B1F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A359FCCE1E28C9FE00363B1F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A359FCE71E28C9FE00363B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A359FCE81E28C9FE00363B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A359FCEA1E28C9FE00363B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WK_DataTransfer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukeinger.WK-DataTransfer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A359FCEB1E28C9FE00363B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WK_DataTransfer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukeinger.WK-DataTransfer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A359FCEE1E28C9FE00363B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WK_DataTransfer_WatchKit_Extension;
+				INFOPLIST_FILE = "WK_DataTransfer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukeinger.WK-DataTransfer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		A359FCEF1E28C9FE00363B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WK_DataTransfer_WatchKit_Extension;
+				INFOPLIST_FILE = "WK_DataTransfer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukeinger.WK-DataTransfer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		A359FCF21E28C9FE00363B1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WK_DataTransfer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukeinger.WK-DataTransfer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A359FCF31E28C9FE00363B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WK_DataTransfer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lukeinger.WK-DataTransfer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A359FCB11E28C9FD00363B1F /* Build configuration list for PBXProject "WK_DataTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A359FCE71E28C9FE00363B1F /* Debug */,
+				A359FCE81E28C9FE00363B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A359FCE91E28C9FE00363B1F /* Build configuration list for PBXNativeTarget "WK_DataTransfer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A359FCEA1E28C9FE00363B1F /* Debug */,
+				A359FCEB1E28C9FE00363B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A359FCED1E28C9FE00363B1F /* Build configuration list for PBXNativeTarget "WK_DataTransfer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A359FCEE1E28C9FE00363B1F /* Debug */,
+				A359FCEF1E28C9FE00363B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A359FCF11E28C9FE00363B1F /* Build configuration list for PBXNativeTarget "WK_DataTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A359FCF21E28C9FE00363B1F /* Debug */,
+				A359FCF31E28C9FE00363B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A359FCAE1E28C9FD00363B1F /* Project object */;
+}
