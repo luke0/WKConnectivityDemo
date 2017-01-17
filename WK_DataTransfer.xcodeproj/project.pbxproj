@@ -20,6 +20,9 @@
 		A359FCE11E28C9FE00363B1F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359FCE01E28C9FE00363B1F /* ExtensionDelegate.swift */; };
 		A359FCE31E28C9FE00363B1F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359FCE21E28C9FE00363B1F /* NotificationController.swift */; };
 		A359FCE51E28C9FE00363B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A359FCE41E28C9FE00363B1F /* Assets.xcassets */; };
+		A359FCF51E28F41200363B1F /* DTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359FCF41E28F41200363B1F /* DTMessage.swift */; };
+		A359FCF61E28F83100363B1F /* DTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359FCF41E28F41200363B1F /* DTMessage.swift */; };
+		A3B7BE7C1E291E4500B73FC2 /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B7BE7B1E291E4500B73FC2 /* TableRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,8 @@
 		A359FCE21E28C9FE00363B1F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		A359FCE41E28C9FE00363B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A359FCE61E28C9FE00363B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A359FCF41E28F41200363B1F /* DTMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTMessage.swift; sourceTree = "<group>"; };
+		A3B7BE7B1E291E4500B73FC2 /* TableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,11 +132,12 @@
 			isa = PBXGroup;
 			children = (
 				A359FCB91E28C9FE00363B1F /* AppDelegate.swift */,
-				A359FCBB1E28C9FE00363B1F /* ViewController.swift */,
-				A359FCBD1E28C9FE00363B1F /* Main.storyboard */,
 				A359FCC01E28C9FE00363B1F /* Assets.xcassets */,
-				A359FCC21E28C9FE00363B1F /* LaunchScreen.storyboard */,
+				A359FCF41E28F41200363B1F /* DTMessage.swift */,
 				A359FCC51E28C9FE00363B1F /* Info.plist */,
+				A359FCC21E28C9FE00363B1F /* LaunchScreen.storyboard */,
+				A359FCBD1E28C9FE00363B1F /* Main.storyboard */,
+				A359FCBB1E28C9FE00363B1F /* ViewController.swift */,
 			);
 			path = WK_DataTransfer;
 			sourceTree = "<group>";
@@ -139,9 +145,9 @@
 		A359FCCC1E28C9FE00363B1F /* WK_DataTransfer WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				A359FCCD1E28C9FE00363B1F /* Interface.storyboard */,
 				A359FCD01E28C9FE00363B1F /* Assets.xcassets */,
 				A359FCD21E28C9FE00363B1F /* Info.plist */,
+				A359FCCD1E28C9FE00363B1F /* Interface.storyboard */,
 			);
 			path = "WK_DataTransfer WatchKit App";
 			sourceTree = "<group>";
@@ -149,12 +155,13 @@
 		A359FCDB1E28C9FE00363B1F /* WK_DataTransfer WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A359FCDE1E28C9FE00363B1F /* InterfaceController.swift */,
-				A359FCE01E28C9FE00363B1F /* ExtensionDelegate.swift */,
-				A359FCE21E28C9FE00363B1F /* NotificationController.swift */,
 				A359FCE41E28C9FE00363B1F /* Assets.xcassets */,
+				A359FCE01E28C9FE00363B1F /* ExtensionDelegate.swift */,
 				A359FCE61E28C9FE00363B1F /* Info.plist */,
+				A359FCDE1E28C9FE00363B1F /* InterfaceController.swift */,
+				A359FCE21E28C9FE00363B1F /* NotificationController.swift */,
 				A359FCDC1E28C9FE00363B1F /* Supporting Files */,
+				A3B7BE7B1E291E4500B73FC2 /* TableRowController.swift */,
 			);
 			path = "WK_DataTransfer WatchKit Extension";
 			sourceTree = "<group>";
@@ -304,6 +311,7 @@
 			files = (
 				A359FCBC1E28C9FE00363B1F /* ViewController.swift in Sources */,
 				A359FCBA1E28C9FE00363B1F /* AppDelegate.swift in Sources */,
+				A359FCF51E28F41200363B1F /* DTMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +321,9 @@
 			files = (
 				A359FCE31E28C9FE00363B1F /* NotificationController.swift in Sources */,
 				A359FCE11E28C9FE00363B1F /* ExtensionDelegate.swift in Sources */,
+				A3B7BE7C1E291E4500B73FC2 /* TableRowController.swift in Sources */,
 				A359FCDF1E28C9FE00363B1F /* InterfaceController.swift in Sources */,
+				A359FCF61E28F83100363B1F /* DTMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +531,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WK_DataTransfer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lukeinger.WK-DataTransfer";
@@ -533,6 +545,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WK_DataTransfer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lukeinger.WK-DataTransfer";
@@ -560,6 +574,7 @@
 				A359FCEB1E28C9FE00363B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A359FCED1E28C9FE00363B1F /* Build configuration list for PBXNativeTarget "WK_DataTransfer WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +583,7 @@
 				A359FCEF1E28C9FE00363B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A359FCF11E28C9FE00363B1F /* Build configuration list for PBXNativeTarget "WK_DataTransfer" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +592,7 @@
 				A359FCF31E28C9FE00363B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

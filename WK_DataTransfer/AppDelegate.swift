@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import WatchKit
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var DTWKSession:WCSession?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if WCSession.isSupported() {
+            DTWKSession = WCSession.default()
+            DTWKSession?.delegate = self
+            DTWKSession?.activate()
+        }
+        
         return true
     }
 
@@ -40,7 +49,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
 }
 
+extension AppDelegate: WCSessionDelegate {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if activationState == WCSessionActivationState.activated {
+            print("App Session Activated")
+        } else if activationState == WCSessionActivationState.inactive {
+            print("App Session Inactive")
+        } else if activationState == WCSessionActivationState.notActivated {
+            print("App Session Not Activate")
+        }
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        
+        //Find the username values
+        let user = message["User"]
+        
+        //Replicate an authentication (Would match to keychain normally)
+        if let u = user as? String {
+            if u == "Joe Bloggs" {
+                
+                var received:DTMessage = DTMessage()
+                received = received.fromDict(dict: message)
+                
+                for message in received.Values {
+                    if let msg = message as? DTMessageItem {
+                        if let t = msg.title, let v = msg.value {
+                            print("Watch message \(t) \(v)")
+                        }
+                    }
+                }
+                
+                //Build the response - Data could be from anywhere
+                let replyMessage:DTMessage = DTMessage()
+                replyMessage.addItem(title: "User", value: u)
+                replyMessage.addItem(title: "Age", value: "65")
+                replyMessage.addItem(title: "Gender", value: "Male")
+                
+                // Using the block to send back a message to the Watch
+                replyHandler(replyMessage.toDict())
+                
+            }
+        } else {
+            //Authentication Failed -- DO SOMETHING!!
+        }
+
+    }
+}
